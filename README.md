@@ -1,6 +1,6 @@
 # Brightstar Ventures
 
-Brightstar's mission ______. Our organization landing page is found in production at `buildwithbrightstar.com`.
+Brightstar's mission ______. Our organization landing page is found in production at [buildwithbrightstar.com](https://buildwithbrightstar.com).
 
 ## Developer Docs
 
