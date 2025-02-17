@@ -104,9 +104,7 @@ These code standards should be upheld for all projects. Following these guidelin
    	print_all_cities_in_country(country=country)
     ```
 
-   # We do this because instead of having nested loops,
-   # we make the code more readable by throwing the "nest"
-   # into a clearly typed and strong-contract function.
+   We do this because instead of having nested loops, we make the code more readable by throwing the "nest" into a clearly typed and strong-contract function.
 
 ---
 
