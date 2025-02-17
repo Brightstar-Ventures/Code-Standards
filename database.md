@@ -46,21 +46,21 @@ supabase db seed test.sql
 ### Database Access
 
 Using Supabase Studio
-• Navigate to Supabase Dashboard
-• Select your project and open the SQL Editor to run queries.
+- Navigate to **[Supabase Dashboard](https://app.supabase.com)**
+- Select your project and open the **SQL Editor** to run queries.
 
-Using VSCode PostgreSQL Extension
-• Install the PostgreSQL Extension in VSCode.
-• Connect using:
-• Username: postgres
-• Password: postgres
-• Port: 5432
-• Database: brightstar
+### Using VSCode PostgreSQL Extension
+- Install the **PostgreSQL Extension** in VSCode.
+- Connect using:
+  - **Username:** `postgres`
+  - **Password:** `postgres`
+  - **Port:** `5432`
+  - **Database:** `brightstar`
 
 ### Summary
-• Use Supabase CLI for database management (supabase db push/reset).
-• Use Supabase Studio or VSCode PostgreSQL Extension for direct queries.
-• Demo/Test data can be loaded via seeding scripts.
+- **Use Supabase CLI** for database management (`supabase db push/reset`).
+- **Use Supabase Studio** or **VSCode PostgreSQL Extension** for direct queries.
+- **Demo/Test data** can be loaded via seeding scripts.
 
-For more details, visit Supabase Docs.
+For more details, visit [Supabase Docs](https://supabase.com/docs).
 
