@@ -45,11 +45,11 @@ supabase db seed test.sql
 
 ### Database Access
 
-Using Supabase Studio
+## Using Supabase Studio
 - Navigate to **[Supabase Dashboard](https://app.supabase.com)**
 - Select your project and open the **SQL Editor** to run queries.
 
-### Using VSCode PostgreSQL Extension
+## Using VSCode PostgreSQL Extension
 - Install the **PostgreSQL Extension** in VSCode.
 - Connect using:
   - **Username:** `postgres`
