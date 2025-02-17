@@ -39,7 +39,7 @@ These code standards should be upheld for all projects. Following these guidelin
     def add_song(name: str, artist: str, songs_dict: dict[str, str]) -> None:
         songs_dict[name] = artist
         
-    add_song(name="Transform", artist="Daniel Caesar", songs_dict=song_names_and_artists)
+    add_song(name="Dogs", artist="Pink Floyd", songs_dict=song_names_and_artists)
 
     # This function modifies an external variable—bad practice.
     ```
@@ -52,10 +52,10 @@ These code standards should be upheld for all projects. Following these guidelin
         print(f"{member_name} {praise}!")
 
     # BAD EXAMPLE
-    praise_team("Alex", "is the best!")
+    praise_team("Nathan", "is the best!")
 
     # GOOD EXAMPLE
-    praise_team(member_name="Sam", praise="delivered the feature on time!")
+    praise_team(member_name="Joel", praise="delivered the feature on time!")
 
     # Naming arguments improves readability and triggers Python’s built-in validation.
     ```
@@ -86,25 +86,27 @@ These code standards should be upheld for all projects. Following these guidelin
 
 ## **Loops**
 
-1. **Avoid deeply nested loops** (≥3 levels).  
+1. **Avoid nested loops **.  
    - Instead, **refactor logic into helper functions**.
 
     ```python
-    # BAD EXAMPLE
-    for country in world:
-        for city in country:
-            print(f"{city} in {country}")
-
-    # GOOD EXAMPLE
-    def print_all_cities(country: Country) -> None:
-        for city in country:
-            print(f"{city} in {country}")
-
-    for country in world:
-        print_all_cities(country)
-
-    # Extracting logic into a function keeps loops clean and readable.
+    # DO NOT DO THIS
+   for country in globe:
+   	for city in country:
+   		print(f"{city} in {country}")
+   
+   # DO THIS
+   print_all_cities_in_country(country: Country) -> None:
+   	for city in country:
+   		print(f"{city} in {country}")
+   		
+   for country in globe:
+   	print_all_cities_in_country(country=country)
     ```
+
+   # We do this because instead of having nested loops,
+   # we make the code more readable by throwing the "nest"
+   # into a clearly typed and strong-contract function.
 
 ---
 
