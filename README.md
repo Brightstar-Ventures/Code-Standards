@@ -8,4 +8,3 @@ Brightstar's mission ______. Our organization landing page is found in productio
 * [Database Concerns](database.md)
 * [Authentication, Authorization, and Permissions](auth.md)
 * [Testing Tools](testing.md)
-* [Debugging Tools](debugging.md)
