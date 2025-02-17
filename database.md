@@ -10,11 +10,13 @@ Supabase manages the database environment, eliminating the need for manual conta
 
 By convention, our database environment settings are:
 
+```
 SUPABASE_DB_USER=postgres
 SUPABASE_DB_PASSWORD=postgres
 SUPABASE_DB_HOST=db.supabase.co
 SUPABASE_DB_PORT=5432
 SUPABASE_DB_NAME=brightstar
+```
 
 ### Managing the Database
 
@@ -30,36 +32,35 @@ To reset the database completely:
 supabase db reset
 ```
 
-Seeding Data
+### Seeding Data
 
 Use the following scripts to load data:
-	•	Demo Data: Preloads the database with sample data for testing features.
+• Demo Data: Preloads the database with sample data for testing features.
 
-	Testing Data: Loads minimal data for automated tests.
+Testing Data: Loads minimal data for automated tests.
 
 ```
 supabase db seed test.sql
 ```
 
-Database Access
+### Database Access
 
 Using Supabase Studio
-	•	Navigate to Supabase Dashboard
-	•	Select your project and open the SQL Editor to run queries.
+• Navigate to Supabase Dashboard
+• Select your project and open the SQL Editor to run queries.
 
 Using VSCode PostgreSQL Extension
-	•	Install the PostgreSQL Extension in VSCode.
-	•	Connect using:
-	•	Hostname: db.supabase.co
-	•	Username: postgres
-	•	Password: postgres
-	•	Port: 5432
-	•	Database: brightstar
+• Install the PostgreSQL Extension in VSCode.
+• Connect using:
+• Username: postgres
+• Password: postgres
+• Port: 5432
+• Database: brightstar
 
-Summary
-	•	Use Supabase CLI for database management (supabase db push/reset).
-	•	Use Supabase Studio or VSCode PostgreSQL Extension for direct queries.
-	•	Demo/Test data can be loaded via seeding scripts.
+### Summary
+• Use Supabase CLI for database management (supabase db push/reset).
+• Use Supabase Studio or VSCode PostgreSQL Extension for direct queries.
+• Demo/Test data can be loaded via seeding scripts.
 
 For more details, visit Supabase Docs.
 
